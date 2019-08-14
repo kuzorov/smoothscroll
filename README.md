@@ -22,10 +22,7 @@ When including the polyfill in a script tag, it will run immediately after loade
 If you are importing it as a dependency, make sure to call the `polyfill` method:
 
 ```js
-import smoothscroll from 'smoothscroll-polyfill';
-
-// kick off the polyfill!
-smoothscroll.polyfill();
+import 'smoothscroll-polyfill';
 ```
 
 In both cases, the script will detect if the spec is natively supported and take action only when necessary.
