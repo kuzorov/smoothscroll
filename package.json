@@ -32,26 +32,12 @@
   ],
   "scripts": {
     "lint": "eslint {src,test}/**/*.js",
-    "posttest": "yarn lint",
-    "precommit": "lint-staged",
-    "prebuild": "npm test",
     "build": "rollup -c rollup.config.js",
     "preminify": "yarn build",
     "minify": "uglifyjs dist/smoothscroll.js -c -m -o dist/smoothscroll.min.js --verbose",
     "listdiff": "prettier --list-different {src,test}/**/*.js",
     "format": "prettier --write {src,test}/**/*.js",
     "prepublish": "npm run minify"
-  },
-  "lint-staged": {
-    "linters": {
-      "{src,test}/**/*.js": [
-        "prettier --list-different",
-        "git add"
-      ]
-    }
-  },
-  "prettier": {
-    "singleQuote": true
   },
   "repository": {
     "type": "git",
