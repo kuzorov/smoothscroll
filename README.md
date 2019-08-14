@@ -11,10 +11,10 @@ Download the production ready file [here](https://unpkg.com/smoothscroll-polyfil
 
 ```sh
 # npm
-npm install smoothscroll-polyfill --save
+npm install @kuzorov/smoothscroll-polyfill --save
 
 # yarn
-yarn add smoothscroll-polyfill
+yarn add @kuzorov/smoothscroll-polyfill
 ```
 
 When including the polyfill in a script tag, it will run immediately after loaded.
@@ -22,7 +22,7 @@ When including the polyfill in a script tag, it will run immediately after loade
 If you are importing it as a dependency, make sure to call the `polyfill` method:
 
 ```js
-import 'smoothscroll-polyfill';
+import '@kuzorov/smoothscroll-polyfill';
 ```
 
 In both cases, the script will detect if the spec is natively supported and take action only when necessary.
